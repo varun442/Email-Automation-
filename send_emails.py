@@ -6,17 +6,21 @@ import os
 import time
 import pandas as pd
 from datetime import datetime
+from dotenv import load_dotenv
 
-# Email configuration
-SMTP_SERVER = "smtp.gmail.com"
-SMTP_PORT = 587
-SENDER_EMAIL = "varunsavaigsu@gmail.com"
-SENDER_PASSWORD = "xwle amrf plat xnrg"  # Replace with your Gmail App Password
+# Load environment variables
+load_dotenv()
+
+# Email configuration from environment variables
+SMTP_SERVER = os.getenv('SMTP_SERVER')
+SMTP_PORT = int(os.getenv('SMTP_PORT', 587))
+SENDER_EMAIL = os.getenv('SENDER_EMAIL')
+SENDER_PASSWORD = os.getenv('SENDER_PASSWORD')
 
 # File paths
-RESUME_PATH = "./Varun_Savai_Resume_saia.pdf"
-CSV_PATH = "./saia_recipients.csv"
-LOG_FILE = "email_log.txt"
+RESUME_PATH = "./data/Varun_Savai_Resume_saia.pdf"
+CSV_PATH = "./data/recipients.csv"
+LOG_FILE = "./data/email_log.txt"
 
 def log_activity(message):
     """Log activities with timestamp"""

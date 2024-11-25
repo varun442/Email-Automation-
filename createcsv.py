@@ -2,13 +2,11 @@ import pandas as pd
 
 # Create lists of names and emails from LinkedIn data
 names = [
-    "Christina Murphy",
-    "Shaun Drawdy"
+    "Jayanth Narla",
 ]
 
 emails = [
-    "cmurphy@saia.com",
-    "sdrawdy@saia.com"
+    "jayanth221b@gmail.com",
 ]
 
 # Create DataFrame
@@ -18,5 +16,5 @@ df = pd.DataFrame({
 })
 
 # Save to CSV
-df.to_csv('recipients.csv', index=False)
-print("CSV file 'recipients.csv' has been created successfully!")
+df.to_csv('./data/recipients.csv', index=False)
+print("CSV file 'recipients.csv' has been created successfully in data folder!")
