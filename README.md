@@ -29,8 +29,8 @@ cp .env.example .env
 ```
 
 5. Prepare your data
-- Place your resume PDF in the root directory
-- Create recipients CSV using `create_recipients_csv.py`
+- Place your resume PDF in the data directory
+- Create recipients CSV using `createcsv.py`
 - CSV should have columns: Name, Email
 
 6. Run the system
