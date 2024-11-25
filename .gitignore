@@ -1,0 +1,33 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Log files
+*.log
+email_log.txt
+
+# Local configuration
+.env
+
+# CSV files with sensitive data
+*.csv
+
+# Resume file
+*.pdf
+
+
